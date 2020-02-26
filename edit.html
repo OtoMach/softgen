@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Edit</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">მომხმარებლის რეგისტრაცია</a></li>
+            <li><a href="edit.html">მომხმარებლის რედაქტირება</a></li>
+            <li><a href="delete.html">მომხმარებლის წაშლა</a></li>
+
+        </ul>
+    </div>
+
+    <h1>მომხმარებლის რედაქტირება</h1>
+    <div id="ed">
+        <p style="text-decoration: underline;">სახელის და გვარის მიხედვით შესაძლებელია რეგისტრირებული მომხმარებლის
+            ტელეფონის ნომრისა და მეილის განახლება </p>
+        <form action="edituser.php" method="POST">
+            <label for="fname">სახელი</label>
+            <input type="text" name="fname" placeholder="თქვენი სახელი" required>
+            <label for="lname">გვარი</label>
+            <input type="text" name="lname" placeholder="თქვენი გვარი" required>
+            <label for="tel">ახალი ტელეფონის ნომერი</label>
+            <input type="text" name="tel" placeholder="ახალი ნომერი" required>
+            <label for="mail">ახალი მეილი</label>
+            <input type="text" name="mail" placeholder="ახალი მეილი" required>
+            <input type="submit" id="sub" name="registr" value="რედაქტირება" style="font-size: larger;">
+        </form>
+    </div>
+</body>
+
+</html>

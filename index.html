@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">მომხმარებლის რეგისტრაცია</a></li>
+            <li><a href="edit.html">მომხმარებლის რედაქტირება</a></li>
+            <li><a href="delete.html">მომხმარებლის წაშლა</a></li>
+
+        </ul>
+    </div>
+
+    <h1>მომხმარებლის რეგისტრაცია</h1>
+
+    <div id="reg">
+        <p style="text-decoration: underline;">პირველი მომხმარებლის რეგისტრაციისას შეიქმნება მონაცემთა ბაზა და
+            ცხრილი ყველა საჭირო ველით, ხოლო შემდეგ ყოველი ახალი მომხმარებელი, რეგისტრაციისას, დაემატება ამ
+            მონაცემთა ბაზაში</p>
+        <p style="text-decoration: underline;">დასარეგისტრირებლად სავალდებულოა ყველა ველის შევსება </p>
+
+        <form action="registeruser.php" method="POST">
+            <label for="fname">სახელი</label>
+            <input type="text" name="fname" placeholder="თქვენი სახელი" required>
+            <label for="lname">გვარი</label>
+            <input type="text" name="lname" placeholder="თქვენი გვარი" required>
+            <label for="gend">სქესი</label>
+            <select name="gend" required>
+                <option value="male">მამრობითი</option>
+                <option value="female">მდედრობითი</option>
+            </select>
+            <label for="bdate">დაბადების თარიღი</label>
+            <input type="date" name="bdate" placeholder="თქვენი დაბადების თარიღი" required>
+            <label for="tel">ტელეფონის ნომერი</label>
+            <input type="tel" name="tel" placeholder="თქვენი ტელეფონის ნომერი" required>
+            <label for="mail">E-mail</label>
+            <input type="email" name="mail" placeholder="თქვენი მეილი" required>
+            <input type="submit" id="sub" name="registr" value="რეგისტრაცია" style="font-size: larger;">
+
+        </form>
+    </div>
+</body>
+
+</html>

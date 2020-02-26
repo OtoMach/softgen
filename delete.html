@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Delete</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">მომხმარებლის რეგისტრაცია</a></li>
+            <li><a href="edit.html">მომხმარებლის რედაქტირება</a></li>
+            <li><a href="delete.html">მომხმარებლის წაშლა</a></li>
+
+        </ul>
+    </div>
+
+    <h1>მომხმარებლის წაშლა</h1>
+    <div id="del">
+        <p style="text-decoration: underline;">შეიყვანეთ მომხმარებლის სახელი და გვარი, რომლის წაშლაც გსურთ მონაცემთა
+            ბაზიდან</p>
+        <form action="deleteuser.php" method="POST">
+            <label for="fname">სახელი</label>
+            <input type="text" name="fname" placeholder="თქვენი სახელი" required>
+            <label for="lname">გვარი</label>
+            <input type="text" name="lname" placeholder="თქვენი გვარი" required>
+            <input type="submit" id="sub" name="registr" value="წაშლა" style="font-size: larger;">
+        </form>
+    </div>
+</body>
+
+</html>
